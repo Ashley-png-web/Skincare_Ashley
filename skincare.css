@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+
+header {
+    background-color: #ffccda;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff4081;
+}
+
+nav {
+    background-color: #ffb3c6;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff4081;
+}
+
+.hero {
+    background-color: #ffe6ec;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    margin: 0;
+    color: #ff4081;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ffccd5;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    color: #ff4081;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #666;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.contenedor .cartas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgb(252, 250, 251);
+}
+
+.contenedor .cartas:hover {
+    height: 400px;
+}
+
+.contenedor .cartas .caja-img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #fc76bf;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contenedor .cartas:hover .caja-img {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(255, 192, 226, 0.89);
+}
+
+.contenedor .cartas .caja-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedor .cartas .contenido {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  height: 35px;
+  padding: 0 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+.contenedor .cartas:hover .contenido {
+    top: 130px;
+    height: 250px;
+}
+
+.contenedor .cartas .contenido h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--crl);
+}
+ .contenedor .cartas .contenido p {
+    color: #fb5cb3;
+}
+
+.contenedor .cartas .contenido a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 15px;
+    text-decoration: none;
+    background: var(--crl);
+    color: rgb(239, 144, 208);
+    font-weight: 500;
+}
+
+.contenedor .cartas .contenido a:hover {
+  opacity: 0.8;
+  background-color: deeppink;
+  color: white;
+}
+
+/* Hover Effects */
+.skin-container {
+    display: flex;
+}
+
+.skin-card {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skin-card img {
+    object-fit: cover;
+    filter: grayscale(1);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.skin-card:hover {
+    flex: 10;
+    transition: 0.5s;
+}
+
+.skin-card:hover img {
+    filter: none;
+    transition: 0.5s;
+}
+
+/*carta de precio*/
+.carta-precio {
+    border: 2px solid hotpink;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgb(251, 187, 232);
+}
+
+.carta-precio h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.carta-precio .precio {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.carta-precio ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.carta-precio ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #fbabdb;
+}
+
+.carta-precio button {
+    background-color: #f78fcf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.carta-precio button:hover {
+    background-color: #fa209b;
+}
+
+footer {
+    background-color: #ffccda;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #ff4081;
+}
